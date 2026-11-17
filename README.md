@@ -11,11 +11,11 @@ Evolução do robô Aurora, desenvolvido no Checkpoint 4 da disciplina.
 
 | Nome | RM |
 |------|----|
-| | |
-| | |
-| | |
-| | |
-| | |
+| Breno Silva | RM97864 |
+| Enrico Marquez | RM99325 |
+| Gustavo Dias | RM550820 |
+| Joel Barros | RM550378 |
+| Leonardo moreira | RM550988 |
 
 ## 🎬 Vídeo de demonstração
 
@@ -142,7 +142,7 @@ As três peças se encaixam por abas e rasgos, que já deixam tudo no esquadro, 
 ## 6. Instalação
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone github.com/Gustavo-Dias23/AuroraAlagamento/
 cd aurora-alagamento
 python -m venv venv
 source venv/bin/activate          # Windows: venv\Scripts\activate
