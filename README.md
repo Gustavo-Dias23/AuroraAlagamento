@@ -19,8 +19,8 @@ Evolução do robô Aurora, desenvolvido no Checkpoint 4 da disciplina.
 
 ## 🎬 Vídeo de demonstração
 
-**[Assista no YouTube](COLE_O_LINK_AQUI)** (até 6 minutos)
-
+**[Assista no YouTube]([https://youtu.be/Uf9lZ1XLMbk])** 
+https://youtu.be/Uf9lZ1XLMbk
 ---
 
 ## 1. O problema
