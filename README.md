@@ -19,8 +19,7 @@ Evolução do robô Aurora, desenvolvido no Checkpoint 4 da disciplina.
 
 ## 🎬 Vídeo de demonstração
 
-**[Assista no YouTube]([https://youtu.be/Uf9lZ1XLMbk])** 
-https://youtu.be/Uf9lZ1XLMbk
+**[Assista no YouTube](https://youtu.be/Uf9lZ1XLMbk)** (até 6 minutos)
 ---
 
 ## 1. O problema
@@ -142,8 +141,8 @@ As três peças se encaixam por abas e rasgos, que já deixam tudo no esquadro, 
 ## 6. Instalação
 
 ```bash
-git clone github.com/Gustavo-Dias23/AuroraAlagamento/
-cd aurora-alagamento
+git clone https://github.com/Gustavo-Dias23/AuroraAlagamento.git
+cd AuroraAlagamento
 python -m venv venv
 source venv/bin/activate          # Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -224,11 +223,21 @@ Nenhuma ação depende de comando manual:
 | 9 | Falha do sensor | Desconectar o fio do Echo | Modo falha: pisca duplo e aviso por voz |
 | 10 | Notebook cai | Fechar o `main.py` | Em 15 s o Arduino assume sozinho |
 
-Exemplo do histórico gerado pela simulação (`python main.py --simulado`), com subida rápida, alagamento, escoamento e falha do sensor:
+### Resultado do teste real (18/11)
+
+Teste com o protótipo montado, de 18h47 a 19h18: 564 leituras, com várias subidas e descidas da água na bacia e o modo atenção ligando quando a água subiu rápido (faixas azuis). O sensor parou de responder duas vezes (19h08 e 19h18): nas duas, a estação detectou a falha, avisou e voltou ao normal quando a leitura voltou. Na sessão, o Gemini gerou 19 avisos.
+
+![Teste real](docs/grafico_teste_real.png)
+
+Os dados completos estão em `dados/leituras.csv` e `dados/eventos.csv`.
+
+### Simulação
+
+O mesmo comportamento pode ser reproduzido sem o Arduino com `python main.py --simulado`:
 
 ![Simulação](docs/exemplo_simulacao.png)
 
-A faixa azul mostra o modo atenção: os limiares caem e o alerta de alagado sai mais cedo. Todas as leituras ficam em `dados/leituras.csv`, e as mudanças de nível e os alertas em `dados/eventos.csv`.
+A faixa azul mostra o modo atenção: os limiares caem e o alerta de alagado sai mais cedo.
 
 ## 11. Integração com o MVP
 
